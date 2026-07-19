@@ -1,9 +1,17 @@
 This is a working UrlToMp3 convertor that is designed to be the SIMPLEST convertor.
 The reason i made it was because the other convertors that exsist are shit and overcomplicated.
-So i decited why not make my own and this is the result, a working functionable mp3 convertor that runs on python using the yt_dlp import.
+So i decited why not make my own and this is the result, a working functionable mp3 convertor that runs on python using the yt_dlp import. Also at the moment this is for windows only but maybe i will add it on linux if anyone cares about this app.
+
+HOW TO BUILD IT:
+- Install pyinstaller using the command "pip install pyinstaller" and run it.
+- Once its installed write this in cmd or powershell if you feel elegant: "pyinstaller --onefile --windowed --name="UrlToMp3" --icon="UTM3 icon.ico" --add-data "UTM3 icon.ico;." --hidden-import=yt_dlp WindowApp.py"
+- Now run it and wait for it to build.
+
+(PS: Im not sure if you need to install ffmpeg or install yt_dlp even tho i used a virtual machine, so if that happends just install ffmpeg and run "pip install yt_dlp" in whatever terminal)
 
 If you want to see what yt_dlp supports on converting, heres a list:
-10play: 10play
+
+(10play: 10play
 10play:season
 17live
 17live:clip
@@ -1733,6 +1741,6 @@ zingmp3:week-chart
 zoom
 zoom:clips
 Zype
-generic: Generic downloader that works on some sites
+generic: Generic downloader that works on some sites)
 
 -- RarisNinja --
